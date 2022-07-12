@@ -3,7 +3,7 @@ public class MainExtended {
         String carType = "Coupe";
         String carBrand = "Porsche";
         int power = 300;
-        int speed = 250;
+        double speed = 250;
         char CarClass = 'S';
         boolean isMadeInGerman = true;
         System.out.println(carType);
