@@ -25,26 +25,34 @@ public class UserBartek_27 {
         }
 
 
-
-            public User() {
-                this.users = new int[6];
-                this.size = 0;
-            }
-
-
-            public float average() {
-                float sum = 0;
-                if (this.size  == 0) {
-                    return 0;
-                } else {
-                    for (int i = 0; i < this.size i++) {
-                        sum = sum + this.age[i];
-                    }
-                    return sum / this.size;
-                }
-            }
+        public User() {
+            this.users = new int[6];
+            this.size = 0;
         }
 
 
+        public float average() {
+            float sum = 0;
+            if (this.size == 0) {
+                return 0;
+            } else {
+                for (int i = 0; i < this.size i++){
+                    sum = sum + this.age[i];
+                }
+                return sum / this.size;
+            }
+            public void checkAge() {
+
+                if (this.age > 0 && this.age < return sum / this.size){
+                    System.out.println(this.name);
+                } else {
+                }
+            }
+        }
     }
+}
+
+
+
+
 
