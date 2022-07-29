@@ -7,13 +7,13 @@ public class Application {
 
     public static void main(String[] args) {
     }
-    public User(double age, double height){
+    public Application(double age, double height){
         this.age = age;
         this.height = height;
         this.name = name;
 
     }
-    public void CheckAge() {
+    public void Application() {
         if(name != null) {
             if (age > 30 && height > 160) {
                 System.out.println("User is older then 30 and taller than 160cm");
