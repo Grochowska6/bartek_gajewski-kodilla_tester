@@ -1,29 +1,20 @@
 public class Application {
-
-    double age;
-    double height;
-
-    String name;
-
     public static void main(String[] args) {
-    }
-    public Application(double age, double height){
-        this.age = age;
-        this.height = height;
-        this.name = name;
+
+        User user = new User("Adam",40.5,178);
+        System.out.println(user.name + " " + user.age + " " + user.height);
+        user.checkAge();
+        user.checkHeight();
 
     }
-    public void Application() {
-        if(name != null) {
-            if (age > 30 && height > 160) {
-                System.out.println("User is older then 30 and taller than 160cm");
-            } else {
-                System.out.println("User is 30 (or younger) or 160cm (or shorter)");
-            }
-        }
-    }
-
 }
+
+
+
+
+
+
+
 
 
 
