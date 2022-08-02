@@ -50,9 +50,6 @@ public class Notebook {
             System.out.println("this notebook is old and to expensive");
 
         }
-
-
     }
-
 }
 

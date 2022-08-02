@@ -17,7 +17,7 @@ public class RandomNumbers {
     }
 
     public int getMinMax() {
-        int temp = 0;
+        int max = 0;
         int min = 0;
 
 
