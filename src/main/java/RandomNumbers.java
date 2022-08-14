@@ -1,43 +1,45 @@
-import java.util.Random;
-
 public class RandomNumbers {
-    public int getCountOfRandomNumber(int max) {
+    int max;
+    int range;
+    int maxValue;
+    int minValue;
 
-        Random random = new Random();
-
-        int result = 0;
-        int sum = 0;
-        int max = 5000;
-        while (sum < 5000) {
-            int temp = random.nextInt(31);
-            sum = sum + temp;
-            result++;
-        }
-        return result;
+    public static void main(String[] args){
+        RandomNumbers randomNum = new RandomNumbers(30,5000);
+        randomNum.randomize();
+        System.out.println("Największa wylosowana liczba to: " + randomNum.getMaxValue());
+        System.out.println("Najmniejsza wylosowana liczba to: " + randomNum.getMinValue());
     }
 
-    public int getMinMax() {
-        int max = 0;
-        int min = 0;
 
+    public RandomNumbers(int range, int max){
+        this.range = range;
+        this.max = max;
+    }
 
-
-        boolean True = true;
-        while (True) {
-            for (int i = 0; i < tenp.length; i++) {
-                if (temp[i] == min) ;
-                True = false;
+    public void randomize(){
+        int randomNum = 0;
+        int sum = 0;
+        maxValue = 0;
+        minValue = this.max;
+        int temp;
+        while (sum < max) {
+            temp = (int)(Math.random()*(this.range + 1));
+            if (temp > maxValue) {
+                maxValue = temp;
             }
-            min++;
-        }
-        int max = 30; True = true;
-        while(True){
-            for(int i = 0; i < temp.length; i++){
-                if(temp[i] == max);
-                True = false;
+            if (temp < minValue){
+                minValue = temp;
             }
-            max--;
+            sum = sum + temp;
         }
+    }
 
+    public int getMaxValue() {
+        return maxValue;
+    }
 
+    public int getMinValue() {
+        return minValue;
+    }
 }
